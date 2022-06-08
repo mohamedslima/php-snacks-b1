@@ -6,14 +6,16 @@ Olimpia Milano - Cantù | 55-60 -->
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snacks 1</title>
 </head>
+
 <body>
-<?php 
+    <?php
     $match_array = [
         [
             "home-team" => "Oulx RG",
@@ -40,13 +42,18 @@ Olimpia Milano - Cantù | 55-60 -->
             "away-points" => 34
         ],
     ];
-?>
 
-    <h1>
-    <?php 
-        var_dump ($match_array["home-team"]);
+    for ($i = 0; $i < count($match_array); $i++) {
     ?>
-    </h1>
-    
+
+    <div>
+        <?php echo $match_array[$i]["home-team"] ." - ". $match_array[$i]["away-team"] ." | " . $match_array[$i]["home-points"]
+        . " - " . $match_array[$i]["away-points"]?>
+    </div>
+    <?php }?>
+
+
+
 </body>
+
 </html>
