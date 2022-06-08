@@ -25,7 +25,7 @@ più lungo di 3 caratteri, che mail contenga un
         <h2>
             Accesso riuscito!
         </h2>
-        <?php} else { ?>
+        <?php } else { ?>
             <h2>
                 Accesso Negato!
             </h2>
