@@ -15,8 +15,11 @@ più lungo di 3 caratteri, che mail contenga un
 <body>
     <?php
     $name = $_GET["name"];
+    var_dump($name);
     $mail = $_GET["mail"];
+    var_dump($mail);
     $age = $_GET["age"];
+    var_dump($age);
     $mail_as = strpos($mail, "@");
     $mail_point = strpos($mail, ".");
     ?>
